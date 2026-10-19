@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINGCING PANCING</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>CINGCING PANCING</h1>
+            <nav>
+                <a href="#Beranda">Beranda</a>
+                <a href="#Produk">Produk</a>
+                <a href="#Kontak">Hubungi kami</a>
+                <a href="#Tentang Kami">Tentang Kami</a>
+            </nav>
+    </header>
+<hr>
+    <main>
+        <section id="Beranda" >
+            <h2>CINGCING PANCING ADALAH</h2>
+            <img src="Gemini_Generated_Image_tc9z5rtc9z5rtc9z.jpg" alt="logo cingcing pancing" width="500px" />
+              <p>CIngcing oancing adalah toko yang menjual peralatan dan umpan untuk memancing,
+                cingcing pancing di ambil dari nama panggilan teman saya sendiri yang bernama 
+                fauzi, yang di buat pada tanggal 14-09-2026, di sekolah smkn 1 ciomas. </p>
+            <P>
+                <BUtton type="button" id="tombolSapaan">Sapa pengunjung</BUtton>
+            </P>
+            <p id="hasilSapaan"></p>
+
+          
+        </section>
+
+        <section id="Produk">
+
+            <h2>PRODUK CINGCING PANCING</h2>
+            <!-- membuat pencarian\search -->
+            <label for="search">Cari Produk:</label>
+            <input type="text" id="cariProduk" placeholder="Cari produk..." />
+
+
+                <table border="1" cellpadding="10">
+
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>NAMA PRODUK</th>
+                        <th>KATEGORI</th>
+                        <th>HARGA</th>
+                        <th>GAMBAR</th>
+                        <!--table row-->
+                    </tr>
+                </thead>
+                
+                <tbody id="daftarProduk">
+                    <tr>
+                        <td>1</td>
+                        <td>Umpan merah</td>
+                        <td>Umpan</td>
+                        <td>Rp.20.000</td>
+                        
+                        <td><img src="image copy.png" alt="umpan merah" height="180" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Umpan putih</td>
+                        <td>Umpan</td>
+                        <td>Rp.25.000</td>
+                        <td><img src="umpan putih.jpg" alt="umpan putih" height="180" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Umpan merah + Kroto</td>
+                        <td>Umpan</td>
+                        <td>Rp.25.000</td>
+                        <td><img src="merah kroto.jpg" alt="umpan merah kroto" height="180" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Umpan putih + Kroto</td>
+                        <td>Umpan</td>
+                        <td>Rp.30.000</td>
+                        <td><img src="umpan putih+kroto.jpg" alt="umpan putih kroto" height="180" /></td>
+
+                    </tr>
+                    <tr><td>5</td>
+                        <td>Pelampung</td>
+                        <td>Alat</td>
+                        <td>Rp.5.000/4pcs</td>
+                        <td><img src="plampung.jpg" alt="pelampung" height="180" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kail sasame</td>
+                        <td>Alat</td>
+                        <td>Rp.50.000/1 Bungkus</td>
+                        <td><img src="sasame.jpg" alt="kail sasame" height="180" /></td>
+
+                    </tr>
+                    <tr>
+                        
+                        <td>7</td>
+                        <td>Kail capcai </td>
+                        <td>alat</td>
+                        <td>Rp.30.000/1 Bungkus</td>
+                        <td><img src="kail capcai.jpg" alt="kail capcai" height="180" /></td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <p id="hasilPencarian"></p>
+
+        </section>
+        <section id="Kontak">
+            <h2>Hubungi Kami</h2>
+            <form action=""  method="POST">
+            <p> 
+                <label>Nama Lengkap</label>
+                    <input 
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="ktik nama anda"
+                        required
+                   
+             
+            <p>
+                <label>Email</label>
+                    <input 
+                        type="Email"
+                        id="Email"
+                        name="Email"
+                        placeholder="mhmd@gmail.com"
+                        required
+                    
+            </p>
+            <p>
+                <label>Pesam/Ctatan</label>
+                    <textarea
+                        id="Pesan"
+                        name="Pesan"
+                        rows="4"
+                        placeholder="tuliskan pesan anda di sini" ></textarea>
+                    
+                
+            </p>
+            <P>
+                <label for="Pembayaran">Opsi Pembayaran:</label>
+                <select id="Pembayaran" name="Pembayaran">
+                <option value="COD">BAYAR DI TEMPAT</option>
+                <option value="ATM">TRANSFER REKENING ATM</option>
+                <option value="EWALLET">TRANSFER EWALLET</option>
+                </select>
+            <br>
+            <br>
+                <label for="Pengiriman">Opsi Pengiriman:</label>
+                <select id="Pengiriman" name="Pengiriman">
+                <option value="JNT">JNT</option>
+                <option value="SPX">SPX</option>
+                <option value="SICEPAT">SICEPAT</option>
+                </select>
+            <br>
+            <br>
+                <button type="submit">Kirim pesan</button>
+               </section> 
+            </P>
+            <p>
+                 <section id="Tentang Kami">
+                <h2>TENTANG KAMI</h2>
+                <table border="2" cellpadding="8">
+                    <thead>
+                        <th>NO</th>
+                        <th>NAMA</th>
+                        <th>NISN</th>
+                        <th>FOTO</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>1</td>
+                        <td>Muhamad bachrul ulum</td>
+                        <td>03041329</td>
+                        <td><img src="WIN_20260914_14_07_00_Pro.jpg" alt="foto bachrul" height="180" /></td>
+                        
+                        <tr>
+                        <td>2</td>
+                        <td>Rachmat Fauzan </td>
+                        <td>0102072759</td>
+                        <td><img src="ojan.jpg" alt="foto ojan" height="180" /></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>3</td>
+                        <td>Muhamad tiyo saputra</td>
+                        <td>0114266151</td>
+                        <td><img src="tyo.jpg" alt="foto tiyo" height="180" /></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                        <td>4</td>
+                        <td>Muhammad haekal syakir</td>
+                        <td>011300027549</td>
+                        <td><img src="ikal.jpg" alt="kail sasame" height="180" /></td>
+
+                        <tr>
+                        <td>5</td>
+                        <td>Muhammad gilang al fathdry</td>
+                        <td>0104449468</td>
+                        <td><img src="gilang.jpg" alt="kail sasame" height="180" /></td>
+                        </tr>    
+
+                        <tr>
+                        <td>6</td>
+                        <td>Muhammad fauzi mariadi</td>
+                        <td>0114640832</td>
+                        <td><img src="uzi.jpg" alt="kail sasame" height="180" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+            </form>
+        </section>
+        </main>
+<hr>
+    <footer>
+        <P>&copy; 2026 CINGCING PANCING BY KLOMPOK BERENAM </P>
+    </footer>
+</body>
+</html>
+
+<script>
+    // 1. Variable menggunakan let dan const
+ const namaToko="Toko Cing-Cing Pancing";
+        let jumlahPengunjung= 0;
+
+ function sapaPengunjung(){
+        jumlahPengunjung++;
+ 
+const hasil = document.getElementById("hasilSapaan");
+    [];
+    hasil.textContent =
+        "Selamat datang di " +
+        namaToko +
+        "! Anda adalah pengunjung ke-" +
+        jumlahPengunjung +
+        ".";
+
+alert("Selamat datang di " + namaToko + "! Anda adalah pengunjung ke-" + jumlahPengunjung + ".");
+}
+
+document.getElementById("tombolSapaan").addEventListener("click", sapaPengunjung);
+
+// 2. Fungsi untuk pencarian produk
+    const inputCari = document.getElementById("cariProduk");
+    const daftarProduk = document.querySelectorAll("#daftarProduk tr");
+    const hasilPencarian = document.getElementById("hasilPencarian");
+
+inputCari.addEventListener("input", function() {
+    const kataKunci = inputCari.value.toLowerCase();
+    let jumlahDitemukan = 0;
+
+daftarProduk.forEach(function(baris) {
+    const namaProduk = baris.cells[1].textContent.toLowerCase();
+    const kategoriProduk = baris.cells[2].textContent.toLowerCase();
+    const hargaProduk = baris.cells[3].textContent.toLowerCase();
+
+    if (namaProduk.includes(kataKunci) || kategoriProduk.includes(kataKunci) || hargaProduk.includes(kataKunci)) { 
+            baris.style.display = "";
+            jumlahDitemukan++;
+        }
+    else {
+            baris.style.display = "none";
+        }
+        
+    });
+
+    if (jumlahDitemukan> 0){
+        hasilPencarian.textContent = "Ditemukan " + jumlahDitemukan + " produk.";
+    }
+    else {
+        hasilPencarian.textContent = "Tidak ada produk yang ditemukan.";
+    }
+
+});
+</script>
